@@ -14,7 +14,7 @@ for i in *_extracted.fastq ;do echo $i;a=${i/\.fastq/};b=${a/*\//};STAR --runThr
 
 
 # Map to transcriptome rp_analysis script. Make sure there are bam file in the output. -X: Read length (in my case 60). -I: 20. -E: 21 (extention in yor annotaiton.)
-for i in rm_rRNA/*.fastq;do echo $i;./rp_analysis_for_short_reads_+8910_frag60.sh -M Mapping -Q $i  -T /home/jwu/annotation/extend_transcriptome/Saccharomyces_cerevisiae.R64-1-1.86_changed_CDS_non_overlappwithohters_protein_coding_extended_annotated_nooverlapwithTy  -O mapping_keepuntrimmed  -X 60 -I 10 -E 21;done;
+for i in rm_rRNA/*.fastq;do echo $i;./rp_analysis.sh -M Mapping -Q $i  -T /home/jwu/annotation/extend_transcriptome/Saccharomyces_cerevisiae.R64-1-1.86_changed_CDS_non_overlappwithohters_protein_coding_extended_annotated_nooverlapwithTy  -O mapping_keepuntrimmed  -X 60 -I 10 -E 21;done;
 
 # For generating the frame information at the 3' end of genes. 
 for i in *.bam ;do echo $i;a=${i/\.bam/};b=${i/_R1*/};samtools view $i | awk 'BEGIN{OFS="\t"}NR==FNR{if(NR%2==1){sub(/>/,"",$1)
