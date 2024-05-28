@@ -9,13 +9,11 @@ This repository includes scripts for analyzing the data in doi:10.1101/2024.02.2
 * FASTX-Toolkit
 * STAR (>2.7.10)
 * Bowtie (1.3.1)
-
 ```
 
 ## Prepare the genome/annotation index
 ### Generate ncRNA (rRNA, tRNA, snRNA...)
 
 ```
-STAR --runThreadN 36 --runMode genomeGenerate --genomeDir Saccharomyces_cerevisiae.R64-1-1.86_changed_non_protein_coding_tRNACCA_STAR --genomeFastaFiles Saccharomyces_cerevisiae.R64-1-1.86_changed_non_protein_coding_tRNACCA.fasta  --genomeSAindexNbases 4
-
+STAR --runThreadN 18 --runMode genomeGenerate --genomeDir ncRNA_STAR --genomeFastaFiles SacCer3_ncRNA.fa  --genomeSAindexNbases 4
 ```
