@@ -1,0 +1,2 @@
+mapping/Mu_demo.bed6	Ncs2elp6	rep1	27,28,29	1,0,0:2	15,16,16:17	mutant
+mapping/WT_demo.bed6	WT	rep1	27,28,29	1,0,0:2	15,16,16:17	wt
