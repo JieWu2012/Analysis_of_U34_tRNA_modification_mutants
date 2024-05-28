@@ -24,5 +24,10 @@ bowtie-build SacCer3_CDS_ex21.fa SacCer3_CDS_ex21
 ```
 ## Preprocessing the data
 
+* Copy the scripts inside "Ribo-seq" folder to your ribo-seq data folder
+* In "Read_preprecessing.sh", Change the adapter sequence and nucleotides that need to be clipped or trimmed from your sequences, change the parameters of STAR as you need and run: 
 
-
+```
+./Read_preprocessing.sh 
+```
+After running, the clean read fastq files are in the folder `ncRNA`
