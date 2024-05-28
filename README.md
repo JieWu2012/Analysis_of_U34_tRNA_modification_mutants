@@ -5,11 +5,11 @@ This repository includes scripts for analyzing the data in doi:10.1101/2024.02.2
 
 
 ## Prerequisites
-```
+
 * FASTX-Toolkit
 * STAR (>2.7.10)
 * Bowtie (1.3.1)
-```
+
 
 ## Prepare the genome/annotation index
 ### Generate ncRNA (rRNA, tRNA, snRNA...)
