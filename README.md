@@ -15,7 +15,7 @@ This repository includes scripts for analyzing the data in doi:10.1101/2024.02.2
 ### Generate STAR index for ncRNA (rRNA, tRNA, snRNA...)
 
 ```
-STAR --runThreadN 18 --runMode genomeGenerate --genomeDir ncRNA_STAR --genomeFastaFiles SacCer3_ncRNA.fa  --genomeSAindexNbases 4
+STAR --runThreadN 18 --runMode genomeGenerate --genomeDir SacCer3_ncRNA_STAR --genomeFastaFiles SacCer3_ncRNA.fa  --genomeSAindexNbases 4
 ```
 ### Generate bowtie index for CDS with 21 nt extension
 
